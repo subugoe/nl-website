@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="content">
+    <div class="content_header">
+        {% include banner.html %}
+        <form action="" class="search -center">
+            <label for="search" class="sr-only">Suchbegriffe</label>
+            <input id="search" type="text" class="search_input" value="{{ site.search_term | escape }}">
+            <button class="search_submit">
+                Suchen
+            </button>
+        </form>
+    </div>
+    <main class="main">
+        <section class="main_column">
+            {% include fields.html %}
+        </section>
+        <aside class="main_column">
+            {% include projects.html %}
+        </aside>
+    </main>
+</div>

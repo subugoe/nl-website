@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@import 'functions/shade';
+@import 'functions/tint';
+
+@import 'util/settings';
+
+@import 'mixins/button';
+@import 'mixins/clearfix';
+@import 'mixins/hover';
+@import 'mixins/hover-transition';
+@import 'mixins/input';
+@import 'mixins/respond-to';
+@import 'mixins/separator';
+
+@import 'common/hidden';
+@import 'common/sr-only';
+
+@import 'util/base';
+
+@import 'blocks/banner';
+@import 'blocks/content';
+@import 'blocks/fields';
+@import 'blocks/filter';
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/metadata';
+@import 'blocks/pagination';
+@import 'blocks/projects';
+@import 'blocks/result';
+@import 'blocks/results';
+@import 'blocks/search';
+@import 'blocks/site';
+@import 'blocks/viewer';

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Ergebnisse
+permalink: /results
+---
+
+<div class="content">
+    <div class="content_header -small">
+        <span class="content_logo"><a href="">{{ site.title | escape }}</a></span>
+		<span class="content_search">
+            {% include search.html %}
+		</span>
+    </div>
+    <main class="main">
+        <section class="main_content">
+            {% include results.html %}
+        </section>
+        <aside class="main_aside">
+            {% include filters.html %}
+        </aside>
+    </main>
+</div>
