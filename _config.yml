@@ -10,8 +10,8 @@ title: Nationallizenzen
 email: nationallizenzen@sub.uni-goettingen.de
 description: > # this means to ignore newlines until "baseurl:"
   Nationallizenzen Hosting
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://subugoe.github.io/gdz-website" # the base hostname & protocol for your site
+baseurl: "/gdz-website" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 twitter_username: nationallizenzen
 github_username:  subugoe
 

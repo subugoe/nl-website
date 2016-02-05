@@ -1,6 +1,6 @@
 <header class="header">
     <nav class="header_nav">
-        <a class="header_logo" href="{{ site.url }}/">
+        <a class="header_logo" href="{{ site.baseurl }}/">
             {{ site.title }}
         </a>
         <ul class="header_items">
@@ -8,7 +8,7 @@
 
             {% if my_page.title %}
             <li class="header_item">
-                <a class="header_link" href="{{ my_page.url | prepend: site.url }}">{{ my_page.title }}</a>
+                <a class="header_link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
             </li>
             {% endif %}
 
