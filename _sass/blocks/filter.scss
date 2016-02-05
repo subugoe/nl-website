@@ -8,3 +8,17 @@
 	font-size: $font-size-small;
 	color: $text-color-light;
 }
+
+.filter_item {
+	a {
+		box-shadow: none;
+	}
+
+	&:before {
+		content: none !important;
+	}
+}
+
+.filter_list {
+	margin-left: 0 !important;
+}

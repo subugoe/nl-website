@@ -1,21 +1,158 @@
-<footer class="site-footer footer">
-
-    <div class="wrapper">
-        <ul>
-            <li>{{ site.title }}</li>
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% if site.github_username %}
-            <li>
-                {% include icon-github.html username=site.github_username %}
-            </li>
-            {% endif %}
-
-            {% if site.twitter_username %}
-            <li>
-                {% include icon-twitter.html username=site.twitter_username %}
-            </li>
-            {% endif %}
-        </ul>
-    </div>
-
-</footer>
+<div class="footer">
+	<div class="footer_left">
+		<ul>
+			<li>
+				<a href="suche/" title="Webseitensuche">Webseitensuche</a>
+			</li>
+			<li>
+				<a href="letzte-aenderungen/" title="Letzte Änderungen">Letzte Änderungen</a>
+			</li>
+			<li>
+				<a href="sitemap/" title="Sitemap">Sitemap</a>
+			</li>
+			<li>
+				<a href="kontakt/" title="Kontakt">Kontakt</a>
+			</li>
+			<li>
+				<a href="impressum/" title="Impressum">Impressum</a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer_right">
+		<ul>
+			<!--<li>
+		</li>-->
+		<li>
+			<!-- Feedback -->
+			<a rel="nofollow" href="feedback/?tx_nkwuserfeedback%5Bpage%5D=">				Feedback			</a>
+		</li>
+		<!-- Permalink -->
+		<li>
+			<span class="short-url">
+				<a href="https://www05.sub.uni-goettingen.de/-A5pWk" class="short-url_link" target="_self" rel="nofollow">Short URL</a>
+				<span class="short-url_popup">
+					<input type="text" class="short-url_input" value="https://www05.sub.uni-goettingen.de/-A5pWk" readonly>
+					</span>
+				</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="colophon">
+	<div class="colophon_links">
+		<div class="colophon_column">
+			<h6>Ressourcen</h6>
+			<ul>
+				<li>
+					<a href="weitere-informationen/weitere-sucheinstiege-recherchetipps/" title="Literatursuche">Literatursuche</a>
+				</li>
+				<li>
+					<a href="http://www.ubka.uni-karlsruhe.de/kvk.html" title="KVK – Karlsruher Virtueller Katalog" target="_blank" class="external-link-new-window">KVK – Karlsruher Virtueller Katalog</a>
+				</li>
+				<li>
+					<a href="http://dispatch.opac.d-nb.de/DB=1.1/LNG=DU/" title="ZDB – Zeitschriftendatenbank" target="_blank" class="external-link-new-window">ZDB – Zeitschriftendatenbank</a>
+				</li>
+				<li>
+					<a href="http://gso.gbv.de/DB=2.3/" title="OLC – Online Contents" target="_blank" class="external-link-new-window">OLC – Online Contents</a>
+				</li>
+				<li>
+					<a href="http://goedoc.uni-goettingen.de/goescholar/" title="GoeScholar" target="_blank" class="external-link-new-window">GoeScholar</a>
+				</li>
+				<li>
+					<a href="http://www.open-access.net/" title="open-access.net" target="_blank" class="external-link-new-window">open-access.net</a>
+				</li>
+			</ul>
+		</div>
+		<div class="colophon_column">
+			<h6>SUB Göttingen</h6>
+			<ul>
+				<li>
+					<a href="ausleihen-verlaengern/benutzerkonten/" title="Benutzerkonten">Benutzerkonten</a>
+				</li>
+				<li>
+					<a href="standorte-raumangebote/standorte-mit-oeffnungszeiten/" title="Öffnungszeiten">Öffnungszeiten</a>
+				</li>
+				<li>
+					<a href="ausleihen-verlaengern/erwerbungsvorschlaege/buecherwunsch-fuer-studierende/" title="Bücherwunsch für Studierende">Bücherwunsch für Studierende</a>
+				</li>
+				<li>
+					<a href="ausleihen-verlaengern/erwerbungsvorschlaege/" title="Erwerbungsvorschläge">Erwerbungsvorschläge</a>
+				</li>
+				<li>
+					<a href="lernen-lehren/schulungsangebote/" title="Schulungsangebote">Schulungsangebote</a>
+				</li>
+				<li class="colophon_item -indent">
+					<a href="https://www.facebook.com/SUB.INFO" title="SUB bei Facebook" target="_blank" class="external-link-new-window">
+						<i class="fa fa-facebook-square"></i> SUB bei Facebook
+					</a>
+				</li>
+				<li class="colophon_item -indent">
+					<a href="https://twitter.com/subugoe" title="SUB bei Twitter" target="_blank" class="external-link-new-window">
+						<i class="fa fa-twitter"></i> SUB bei Twitter
+					</a>
+				</li>
+				<li class="colophon_item -indent">
+					<a href="kontakt/ihre-meinung/" title="Ihre Meinung" class="external-link-new-window">
+						<i class="fa fa-pencil"></i> Ihre Meinung
+					</a>
+				</li>
+				<li class="colophon_item -indent">
+					<a href="kontakt/frag-die-sub/" title="Frag die SUB" class="external-link-new-window">
+						<i class="fa fa-comments"></i> Frag die SUB
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="colophon_column">
+			<h6>Universität Göttingen</h6>
+			<ul>
+				<li>
+					<a href="http://www.uni-goettingen.de/" title="Universität Göttingen" target="_blank" class="external-link-new-window">Universität Göttingen</a>
+				</li>
+				<li>
+					<a href="http://univz.uni-goettingen.de/qisserver/rds?state=user&amp;type=0" title="UniVZ" target="_blank" class="external-link-new-window">UniVZ</a>
+				</li>
+				<li>
+					<a href="//ecampus.uni-goettingen.de" title="eCampus mit Stud.IP" class="external-link-new-window">eCampus mit Stud.IP</a>
+				</li>
+				<li>
+					<a href="http://wiki.student.uni-goettingen.de" title="studIT Online Support" target="_blank" class="external-link-new-window">studIT Online Support</a>
+				</li>
+				<li>
+					<a href="standorte-raumangebote/standorte-mit-oeffnungszeiten/bibliotheken-in-goettingen/" title="Gesamtübersicht Göttinger Bibliotheken ">Gesamtübersicht Göttinger Bibliotheken </a>
+				</li>
+				<li>
+					<a href="http://www.studentenwerk-goettingen.de/speiseplan.html" title="Mensa-Speisepläne" target="_blank" class="external-link-new-window">Mensa-Speisepläne</a>
+				</li>
+				<li>
+					<a href="http://www.gwdg.de/" title="GWDG" target="_blank" class="external-link-new-window">GWDG</a>
+				</li>
+			</ul>
+		</div>
+		<div class="colophon_column">
+			<h6>Stadt Göttingen</h6>
+			<ul>
+				<li>
+					<a href="http://www.goettingen.de/" title="Informationen zur Stadt Göttingen" target="_blank" class="external-link-new-window">Informationen zur Stadt Göttingen</a>
+				</li>
+				<li>
+					<a href="http://goo.gl/maps/KQKUV" title="Stadtplan" target="_blank" class="external-link-new-window">Stadtplan</a>
+				</li>
+				<li>
+					<a href="http://www.goevb.de/" title="Verkehrsverbindungen" target="_blank" class="external-link-new-window">Verkehrsverbindungen</a>
+				</li>
+				<li>
+					<a href="http://www.studieren-in-goettingen.de/" title="studieren-in-goettingen.de" target="_blank" class="external-link-new-window">studieren-in-goettingen.de</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="colophon_last-change" role="contentinfo">
+		<p class="bodytext">Letzte Änderung 18.03.2015</p>
+	</div>
+	<div class="colophon_top-link">
+		<a title="Zurück zum Seitenanfang" href="geisteswissenschaften-und-theologie/aegyptologie/#top">
+			<span class="sr-only">Zurück zum Seitenanfang</span>
+		</a>
+	</div>
+</div>

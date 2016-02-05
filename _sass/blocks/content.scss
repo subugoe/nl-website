@@ -1,5 +1,11 @@
 .content {
+	display: block;
 	flex: 1;
+
+	h1 {
+		font-size: $v;
+		line-height: $v;
+	}
 }
 
 .content_header {

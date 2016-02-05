@@ -1,6 +1,10 @@
 .result {
 	display: flex;
 
+	&:before {
+		content: none !important;
+	}
+
 	& + & {
 		border-top: $border;
 		margin-top: $v / 2 - $border-width;
@@ -8,6 +12,10 @@
 	}
 }
 
+.result_author {
+	color: $text-color-light;
+	font-weight: bold;
+}
 
 .result_content {
 	margin-left: $h;
@@ -26,4 +34,17 @@
 		max-height: 100%;
 		max-width: 100%;
 	}
+}
+
+.result_title {
+	font-weight: bold;
+}
+
+.result_type {
+	color: $text-color-light;
+	font-size: $font-size-small;
+	letter-spacing: .05em;
+	line-height: round($line-height * .7);
+	margin-top: round($line-height * .3);
+	text-transform: uppercase;
 }

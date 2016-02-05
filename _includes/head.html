@@ -1,17 +1,23 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="https://www05.sub.uni-goettingen.de/typo3conf/ext/tmpl_sub/Resources/Public/Img/favicon.ico" type="image/x-icon; charset=binary">
+	<link rel="icon" href="https://www05.sub.uni-goettingen.de/typo3conf/ext/tmpl_sub/Resources/Public/Img/favicon.ico" type="image/x-icon; charset=binary">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="ICBM" content="51.539763,9.935385">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://www05.sub.uni-goettingen.de/typo3temp/compressor/merged-dd8aaee4f6b6ac4d4de9cd2d43b49d9c-8ac4a76002d1e281ace9710c2618e404.css?1454430260" media="all">
+	<script src="https://www05.sub.uni-goettingen.de/typo3temp/compressor/merged-6038f690a3471ed0172afddea5768f3f-3b7b599900c09e3d2d21b2170365241b.js?1454073352" type="text/javascript"></script>
+	<script src="https://www05.sub.uni-goettingen.de/typo3temp/compressor/merged-ba04befac3c39c5da85a4c6c897191fa-163b34cad942b17c8a7c0729cd211c32.js?1454638673" type="text/javascript"></script>
 
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description"
-          content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<!-- Re-add fonts to work around cross origin errors -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/javascipt/jquery.panzoom.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/javascipt/viewer.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/javascipt/jquery.panzoom.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/javascipt/viewer.js"></script>
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

@@ -1,35 +1,47 @@
 .header {
-	background: $alpha-color;
+	padding: 0 ($h / 2);
 }
 
-.header_items {
-	@include separator(0, 1);
-	display: inline-block;
-}
-
-.header_item {
-	display: inline-block;
-
-	& + & {
-		@include separator(0, 0, 0, 1);
-	}
-}
-
-.header_link {
-	@include hover-transition(background);
+.header_area {
 	color: #fff;
-	cursor: pointer;
-	display: block;
-	padding: round($v / 4) 1em;
+	background: $alpha-color;
+	font-size: $v;
+	padding: 15px;
+	position: absolute;
+	top: 24px;
+	left: 160px;
 
-	@include hover {
-		background: $button-hover-bg;
-		color: #fff;
+	a {
+		color: inherit;
 	}
+}
+
+.header_bar {
+	margin: 0 (-$h / 2);
+	padding: round($v / 4) $h $v;
 }
 
 .header_logo {
-	color: grey;
-	float: left;
-	padding: round($v / 4) .5em;
+	width: 160px;
+}
+
+.header_nav {
+	position: absolute;
+	right: $h * 13.5;
+	top: $v;
+	z-index: 1;
+
+	li {
+		float: left;
+
+		& + li {
+			@include separator(0, 0, 0, 1);
+		}
+	}
+
+	a {
+		color: #fff;
+		display: block;
+		padding: ($v / 2) 1em;
+	}
 }

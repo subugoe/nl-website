@@ -1,0 +1,44 @@
+@mixin range-slider {
+	& {
+		-webkit-appearance: none;
+		margin: 0;
+		width: 100%;
+	}
+	&::-webkit-slider-runnable-track {
+		width: 100%;
+		height: ($v / 2);
+		cursor: pointer;
+		box-shadow: 0 1px 3px rgba(#000, .5) inset;
+		background: #bbb;
+		border-radius: ($v / 4);
+	}
+	&::-webkit-slider-thumb {
+		border: $border;
+		border-radius: 50%;
+		height: $h;
+		width: $h;
+		border-radius: 50%;
+		background: $button-hover-bg;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: round(-$v / 4);
+	}
+	&::-moz-range-track {
+		width: 100%;
+		height: ($v / 2);
+		cursor: pointer;
+		box-shadow: 1px 1px 1px rgba(#000, .5) inset;
+		background: #bbb;
+		border-radius: ($v / 4);
+		border: $border;
+	}
+	&::-moz-range-thumb {
+		border: $border;
+		height: $h;
+		width: $h;
+		border-radius: 50%;
+		background: $beta-color;
+		cursor: pointer;
+	}
+	// TODO: Add -ms- styles
+}

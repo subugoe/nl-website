@@ -1,6 +1,7 @@
 .main {
 	display: flex;
-	padding: $v $h;
+	max-width: none;
+	padding: 0 $h;
 
 	@include respond-to(small) {
 		padding: ($v / 2) ($h / 2);
@@ -14,6 +15,10 @@
 .main_column {
 	flex: 1;
 	margin-bottom: $v;
+
+	& + & {
+		margin-left: $h;
+	}
 }
 
 .main_content {

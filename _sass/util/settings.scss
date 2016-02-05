@@ -10,7 +10,7 @@ $border-color: #bbb;
 $header-bg: #eee;
 
 $highlight-bg: tint($alpha-color, 20);
-$highlight-bg-light: tint($alpha-color, 80);
+$highlight-bg-light: tint($alpha-color, 90);
 $highlight-text-color: #fff;
 
 $link-color: $alpha-color;
@@ -21,7 +21,7 @@ $input-border-color: #bbb;
 $input-focus-border-color: $alpha-color;
 
 $button-text-color: #fff;
-$button-bg: linear-gradient(to bottom, tint($alpha-color, 10), shade($alpha-color, 10));
+$button-bg: linear-gradient(to bottom, lighten($link-color, 10), $link-color);
 $button-hover-bg: linear-gradient(to bottom, shade($alpha-color, 10), shade($alpha-color, 30));
 
 $button-light-text-color: $text-color;
@@ -29,7 +29,7 @@ $button-light-bg: linear-gradient(to bottom, tint($beta-color, 10), shade($beta-
 $button-light-hover-bg: linear-gradient(to bottom, tint($beta-color, 30), tint($beta-color, 10));
 
 // Dimensions
-$h: 28px; // horizontal grid
+$h: 26px; // horizontal grid
 $v: 26px; // vertical grid
 
 $br: 3px; // border radius

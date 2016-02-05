@@ -1,36 +1,16 @@
 .pagination {
-	display: flex;
-	justify-content: center;
-	margin: -$border-width 0;
-	flex-wrap: wrap;
+	display: inline-block;
+	margin: 0 !important;
 }
 
 .pagination_link {
-	@include button(light);
-	border-radius: 0;
-	display: block;
-
 	&.-current {
 		background: $highlight-bg;
-		border-color: $highlight-bg;
 		color: #fff;
-		text-shadow: none;
+		font-weight: bold;
 	}
 
-	.pagination_item + .pagination_item > & {
-		@include separator(0, 0, 0, 1);
+	&.-previous {
+		margin-right: 0;
 	}
-
-	.pagination_item:first-child > & {
-		border-top-left-radius: $br;
-		border-bottom-left-radius: $br;
-	}
-
-	.pagination_item:last-child > & {
-		border-top-right-radius: $br;
-		border-bottom-right-radius: $br;
-	}
-}
-.pagination_link-previous svg {
-	transform: rotate(180deg);
 }

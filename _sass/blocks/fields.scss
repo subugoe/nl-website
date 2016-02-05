@@ -1,0 +1,9 @@
+.fields_item {
+	&:before {
+		content: none !important;
+	}
+}
+
+.fields_list {
+	margin-left: 0 !important;
+}
