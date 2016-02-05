@@ -1,16 +1,16 @@
 <section class="viewer">
     <div class="viewer_controls">
         <div class="viewer_group">
-            <button class="viewer_control">Erste Seite</button>
-            <button class="viewer_control">Voriger Abschnitt</button>
-            <button class="viewer_control">Vorige Seite</button>
+            <button class="viewer_control">1</button>
+            <button class="viewer_control" title="Voriger Abschnitt">{% include icons/uniE051.svg %}</button>
+            <button class="viewer_control viewer_control-previous">{% include icons/uniE052.svg %}</button>
             <label class="sr-only" for="viewer-page-select">Aktuelle Seite</label>
             <select class="viewer_control" name="page" id="viewer-page-select">
                 <option selected>29 : 25</option>
             </select>
-            <button class="viewer_control">Nächste Seite</button>
-            <button class="viewer_control">Nächster Abschnitt</button>
-            <button class="viewer_control">Letzte Seite</button>
+            <button class="viewer_control">{% include icons/uniE052.svg %}</button>
+            <button class="viewer_control" title="Nächster Abschnitt">{% include icons/uniE053.svg %}</button>
+            <button class="viewer_control">297</button>
         </div>
         <div class="viewer_group">
             <button class="viewer_control">Verkleinern</button>

@@ -31,3 +31,6 @@
 		border-bottom-right-radius: $br;
 	}
 }
+.pagination_link-previous svg {
+	transform: rotate(180deg);
+}
