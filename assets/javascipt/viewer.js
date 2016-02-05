@@ -16,4 +16,19 @@ $(document).ready(function () {
             focal: e
         });
     });
+
+    function requestFullscreen(element) {
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        }
+    }
+
+    $('.viewer_control-fullscreen').click(function() {
+        var viewer = document.getElementById('main');
+        requestFullscreen(viewer);
+    })
 });

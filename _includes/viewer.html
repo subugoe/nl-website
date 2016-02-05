@@ -1,4 +1,4 @@
-<section class="viewer">
+<section class="viewer" id="viewer">
     <div class="viewer_controls">
         <div class="viewer_group">
             <button class="viewer_control">1</button>
@@ -13,17 +13,17 @@
             <button class="viewer_control">297</button>
         </div>
         <div class="viewer_group">
-            <button class="viewer_control viewer_control-out">Verkleinern</button>
-            <button class="viewer_control viewer_control-in">Vergrößern</button>
+            <button class="viewer_control viewer_control-out">{% include icons/zoom_out.svg %}</button>
+            <button class="viewer_control viewer_control-in">{% include icons/zoom_in.svg %}</button>
         </div>
         <div class="viewer_group">
             <input type="range" class="viewer_control-range" />
         </div>
         <div class="viewer_group">
-            <button class="viewer_control viewer_control-reset">Reset</button>
+            <button class="viewer_control viewer_control-reset">{% include icons/linear_scale.svg %}</button>
         </div>
         <div class="viewer_group">
-            <button class="viewer_control">Vollbild</button>
+            <button class="viewer_control viewer_control-fullscreen">{% include icons/zoom_out_map.svg %}</button>
         </div>
     </div>
     <div class="viewer_scan" id="viewer_scan">
