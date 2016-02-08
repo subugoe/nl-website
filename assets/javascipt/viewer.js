@@ -1,7 +1,5 @@
 $( function() {
 
-	$('.filter_form-places').chosen({allow_single_deselect: true});
-
 	var $panzoom = $('.viewer_image');
 	var $panzoom__buttons = $('.viewer_controls');
 	$panzoom.panzoom({
