@@ -6,38 +6,38 @@
 	}
 	&::-webkit-slider-runnable-track {
 		width: 100%;
-		height: ($v / 2);
+		height: ($v / 4);
 		cursor: pointer;
 		box-shadow: 0 1px 3px rgba(#000, .5) inset;
-		background: #bbb;
+		background: #aaa;
 		border-radius: ($v / 4);
 	}
 	&::-webkit-slider-thumb {
-		border: $border;
 		border-radius: 50%;
 		height: $h;
 		width: $h;
 		border-radius: 50%;
-		background: $button-hover-bg;
+		box-shadow: 0 -.2em .5em rgba(#000, .5) inset;
+		background: $button-light-bg;
 		cursor: pointer;
+		margin-top: round(-$v * .35);
 		-webkit-appearance: none;
-		margin-top: round(-$v / 4);
 	}
 	&::-moz-range-track {
 		width: 100%;
-		height: ($v / 2);
+		height: ($v / 4);
 		cursor: pointer;
 		box-shadow: 1px 1px 1px rgba(#000, .5) inset;
-		background: #bbb;
+		background: #aaa;
 		border-radius: ($v / 4);
 		border: $border;
 	}
 	&::-moz-range-thumb {
-		border: $border;
 		height: $h;
 		width: $h;
 		border-radius: 50%;
-		background: $beta-color;
+		box-shadow: 0 -.2em .5em rgba(#000, .5) inset;
+		background: $button-light-bg;
 		cursor: pointer;
 	}
 	// TODO: Add -ms- styles
