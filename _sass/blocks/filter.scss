@@ -17,26 +17,30 @@
 	&:before {
 		content: none !important;
 	}
+
+	&.-active {
+		background: $highlight-bg-light;
+		border-radius: $br;
+		cursor: pointer;
+		font-weight: bold;
+		padding-left: $h * 1.25;
+		position: relative;
+
+		&:before {
+			@include separator(0, 1, 0, 0);
+			background: $highlight-bg;
+			border-radius: $br 0 0 $br;
+			color: #fff;
+			content: '\00d7' !important;
+			height: 100%;
+			margin: 0 0 0 (-$h * 1.25);
+			text-align: center;
+			text-shadow: 0 -1px 0 rgba(#000, .2);
+			width: $h;
+		}
+	}
 }
 
 .filter_list {
 	margin-left: 0 !important;
-}
-
-
-.filter_item-active {
-	background: #e3eaf9;
-	width: 80%;
-	cursor: pointer;
-	font-weight: bold;
-
-	&::after {
-		content: 'x';
-		float: right;
-		position: relative;
-		border-left: 5px solid $input-bg;
-		width: 26px;
-		padding-left: 14px;
-		height: 2em;
-	}
 }

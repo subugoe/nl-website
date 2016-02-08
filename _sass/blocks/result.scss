@@ -27,6 +27,7 @@
 
 .result_image {
 	height: $v * 4;
+	min-width: $h * 3;
 	width: $h * 3;
 
 	img {
