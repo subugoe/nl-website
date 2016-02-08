@@ -1,0 +1,56 @@
+.collections {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto !important;
+	max-width: 900px;
+}
+
+.collections_image {
+	@include hover-transition(opacity);
+	border-radius: $br;
+	height: auto;
+	opacity: .75;
+	width: 100%;
+}
+
+.collections_item {
+	background: #000;
+	border-radius: $br;
+	display: block;
+	height: 240px;
+	margin: 0 ($v / 2) $h;
+	width: 240px;
+
+	&:before {
+		content: none !important;
+	}
+}
+
+.collections_link {
+	background: none !important;
+	box-shadow: none !important;
+	color: #fff;
+	display: block;
+	opacity: 1;
+	padding: 0 !important;
+	position: relative;
+
+	@include hover {
+		.collections_image {
+			opacity: 1;
+		}
+	}
+}
+
+.collections_name {
+	background: rgba(#000, .75);
+	bottom: $v;
+	display: inline-block;
+	font-family: urw_classicoregular;
+	left: 0;
+	padding: ($v / 4) ($h / 4);
+	position: absolute;
+	right: 0;
+	text-shadow: 0 0 1em #000, 0 1px 0 #000;
+}
