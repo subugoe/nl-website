@@ -15,7 +15,7 @@ url: "" # the base hostname & protocol for your site
 twitter_username: nationallizenzen
 github_username:  subugoe
 
-search_term: Gott
+search_term: Education
 
 # Build settings
 markdown: kramdown
