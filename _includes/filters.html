@@ -2,7 +2,7 @@
 	<div class="filter">
 		<h2 class="filter_title">Sortieren nach</h2>
 		<form class="filter_form">
-			<select>
+			<select class="filter_form-author">
 				<option value="">Autor aufsteigend</option>
 				<option value="">Autor absteigend</option>
 				<option value="">Erscheinungsjahr aufsteigend</option>
@@ -19,12 +19,13 @@
 
 	<div class="filter">
 		<h2 class="filter_title">Orte</h2>
-		<ul class="filter_list">
-			<li class="filter_item"><a href="">Göttingen</a> <span class="filter_count">130</span></li>
-			<li class="filter_item"><a href="">Berlin</a> <span class="filter_count">56</span></li>
-			<li class="filter_item"><a href="">London</a> <span class="filter_count">49</span></li>
-			<li class="filter_item"><a href="">Paris</a> <span class="filter_count">4</span></li>
-		</ul>
+		<select class="filter_form filter_form-places">
+			<option class="filter_item">Göttingen <span class="filter_count">130</span></option>
+			<option class="filter_item">Berlin <span class="filter_count">56</span></option>
+			<option class="filter_item">London <span class="filter_count">49</span></option>
+			<option class="filter_item">Paris <span class="filter_count">4</span></option>
+			<option class="filter_item">Hildesheim <span class="filter_count">4</span></option>
+		</select>
 	</div>
 
 	<div class="filter">
