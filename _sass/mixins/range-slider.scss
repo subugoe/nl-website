@@ -1,44 +1,42 @@
+// NOTE: For range slider styling to work, each browser has to be addressed
+//       with a separate rule. Combined rules won't work.
 @mixin range-slider {
 	& {
 		-webkit-appearance: none;
 		margin: 0;
 		width: 100%;
 	}
-	&::-webkit-slider-runnable-track {
-		width: 100%;
-		height: ($v / 4);
-		cursor: pointer;
-		box-shadow: 0 1px 3px rgba(#000, .5) inset;
-		background: #aaa;
-		border-radius: ($v / 4);
-	}
-	&::-webkit-slider-thumb {
-		border-radius: 50%;
-		height: $h;
-		width: $h;
-		border-radius: 50%;
-		box-shadow: 0 -.2em .5em rgba(#000, .5) inset;
-		background: $button-light-bg;
-		cursor: pointer;
-		margin-top: round(-$v * .35);
-		-webkit-appearance: none;
-	}
 	&::-moz-range-track {
-		width: 100%;
-		height: ($v / 4);
-		cursor: pointer;
-		box-shadow: 1px 1px 1px rgba(#000, .5) inset;
 		background: #aaa;
-		border-radius: ($v / 4);
-		border: $border;
+		border-radius: $br;
+		box-shadow: 1px 1px 1px rgba(#000, .5) inset;
+		cursor: pointer;
+		height: ($v / 4);
+		width: 100%;
+	}
+	&::-webkit-slider-runnable-track {
+		background: #aaa;
+		border-radius: $br;
+		box-shadow: 1px 1px 1px rgba(#000, .5) inset;
+		cursor: pointer;
+		height: ($v / 4);
+		width: 100%;
 	}
 	&::-moz-range-thumb {
-		height: $h;
-		width: $h;
-		border-radius: 50%;
-		box-shadow: 0 -.2em .5em rgba(#000, .5) inset;
 		background: $button-light-bg;
+		border-radius: $br;
 		cursor: pointer;
+		height: $v;
+		width: ($h / 2);
+	}
+	&::-webkit-slider-thumb {
+		background: $button-light-bg;
+		border-radius: $br;
+		cursor: pointer;
+		height: $v;
+		width: ($h / 2);
+		margin-top: round(-$v * .35);
+		-webkit-appearance: none;
 	}
 	// TODO: Add -ms- styles
 }
