@@ -2,27 +2,9 @@
 	padding: 0 ($h / 2);
 }
 
-.header_area {
-	color: #fff;
-	background: $alpha-color;
-	font-size: $v;
-	padding: 15px;
-	position: absolute;
-	top: 24px;
-	left: 160px;
-
-	a {
-		color: inherit;
-	}
-}
-
 .header_bar {
 	margin: 0 (-$h / 2);
 	padding: round($v / 4) $h $v;
-}
-
-.header_logo {
-	width: 160px;
 }
 
 .header_nav {
